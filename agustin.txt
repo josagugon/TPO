@@ -1,6 +1,51 @@
-wertdfsg dfg
+El repositorio propuesto
+========================
+https://github.com/josagugon/TPO.git
 
-fasdg
- sdfg sdfglñ{dfglñdfsgñl
- 
- }
+La hoja de estilo para resetear
+===============================
+https://meyerweb.com/eric/tools/css/reset/
+
+Cree una estructura básica
+==========================
+css
+img
+js
+
+Carpetas para cargar propuestas
+===============================
+agu
+car
+rob
+
+PROYECTO
+========
+Nombre: GENIOS STUDIOS
+Titulo:	GENIO STUDIOS ES UNA EMPRESA DE DESARROLLO WEB Y DE APLICACIONES
+Tematica:	Desarrollar un sitio de una empresa de desarrollo WEB
+Ejemplos:
+    https://sigma.la/
+
+PROPONGO VER ESTE ENLACE, PROPUESTO POR EL PROFESOR
+===================================================
+https://coach2coach.es/estructura-sitio-web/
+LEERLO ESTA BUENO PARA DEFINIR LA ESTRUCTURA DEL MISMO
+
+DATOS DE LOS INTEGRANTES
+========================
+Carlos Martin Bracamonte
+25834538
+bracamontecarlosm@gmail.com
+
+Roberto Stick
+robertostick1997@gmail.com
+
+
+SECCIONES DEL SITIO
+===================
+1) Inicio
+2) Servicios
+3) Proyectos
+4) Quiénes somos
+5) Contacto
+
