@@ -1,5 +1,10 @@
 agustin.txt
+<<<<<<< HEAD
+~*.*
+
+=======
 roberto.txt
+>>>>>>> 3a6470c8c0417ea6f4f6210cc15ce12f634ec281
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
