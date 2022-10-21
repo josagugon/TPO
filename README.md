@@ -1,4 +1,4 @@
-# TPO 
+# TPO
 
 ## TPO Desarrollo Web en HTML, CSS Y JavaScript.
 
@@ -11,6 +11,10 @@
 * Carlos Bracamonte
 * Roberto Stick
 * José Agustín González
+
+##### Profesor:
+
+###### * *RAMIRO ESCALANTE LEIVA*
 
 ##### ¿Cuándo se entrega?
 
@@ -46,7 +50,6 @@
 ##### Condiciones de aprobación:
 
 * Para aprobar se requiere resolver el trabajo práctico en un 60% de forma correcta.
-
 
 ##### ¿Cómo se entrega?
 
