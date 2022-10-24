@@ -6,6 +6,11 @@ La hoja de estilo para resetear
 ===============================
 https://meyerweb.com/eric/tools/css/reset/
 
+
+https://fontawesome.com/icons
+
+
+
 Cree una estructura básica
 ==========================
 css

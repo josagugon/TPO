@@ -7,118 +7,140 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GENIOS ESTUDIO</title>
     <link rel="shortcut icon" href="./assets/ico/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/aec6b64519.js" crossorigin="anonymous"></script>
     <link href="./assets/css/reset.css" rel="stylesheet">
     <link href="./assets/css/style.css" rel="stylesheet">
+    <link href="./assets/css/encabezado.css" rel="stylesheet">
     <link href="./assets/css/menu.css" rel="stylesheet">
     <link href="./assets/css/responsivo.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="sitio">
     <!-- Inicio del encabezamiento -->
-    <header>
-        <nav>
-            <a href="#secInicio">Inicio</a>
-            <a href="#secServicios">Servicios</a>
-            <a href="#secProyectos">Proyectos</a>
-            <a href="#secQuienesSomos">Quiénes somos</a>
-            <a href="#secContacto">Contacto</a>
+    <header class="encabezado">
+        <nav class="menu">
+            <ul class="menu__lista">
+                <li class="menu__item">
+                    <a class="menu__link activo" href="#secInicio">
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                        Inicio
+                    </a>
+                    <a class="menu__link" href="#secServicios">
+                        <i class="fa-solid fa-bell-concierge"></i>
+                        Servicios
+                    </a>
+                    <a class="menu__link" href="#secProyectos">
+                        <i class="fa-solid fa-list-check"></i>
+                        Proyectos
+                    </a>
+                    <a class="menu__link" href="#secQuienesSomos">
+                        <i class="fa-solid fa-address-card"></i>
+                        Quiénes somos
+                    </a>
+                    <a class="menu__link" href="#secContacto">
+                        <i class="fa-solid fa-phone-flip"></i>
+                        Contacto
+                    </a>
+                </li>
+            </ul>
         </nav>
     </header>
     <!-- Fin del encabezamiento -->
 
-    <!-- Inicio del Inicio -->
-    <section id="secInicio">
-        <div>
-            <p>
-                GENIOS ESTUDIO
-                Soluciones para Empresas
-                Desarrollo WEB
-                IT Outsorcing
-                Marketing Digital
-                Publicidad Online
-            </p>
-        </div>
-    </section>
-    <!-- Fin del Inicio -->
+    <main class="contenido">
+        <!-- Inicio del Inicio -->
+        <section class="inicio" id="secInicio">
+            <div>
+                <p>
+                    GENIOS ESTUDIO
+                    Soluciones para Empresas
+                    Desarrollo WEB
+                    IT Outsorcing
+                    Marketing Digital
+                    Publicidad Online
+                </p>
+            </div>
+        </section>
+        <!-- Fin del Inicio -->
 
-    <!-- Inicio de Servicios -->
-    <section id="secServicios">
-        <div>
-            <p>
-                * Desarrollo WEB
-                Sitios web personalizados.
-                Optimizamos la experiencia del usuario y su navegabilidad.
-                Diseño integral del sitio según el objetivo de la empresa.
-                Tienda Online.
+        <!-- Inicio de Servicios -->
+        <section class="servicios" id="secServicios">
+            <div>
+                <p>
+                    * Desarrollo WEB
+                    Sitios web personalizados.
+                    Optimizamos la experiencia del usuario y su navegabilidad.
+                    Diseño integral del sitio según el objetivo de la empresa.
+                    Tienda Online.
 
 
-                * IT Outsorcing
-                Tercerizamos los servicios de la empresa para:
-                - Reducir la carga de trabajos internos.
-                - Mejorar y escalar la productividad.
+                    * IT Outsorcing
+                    Tercerizamos los servicios de la empresa para:
+                    - Reducir la carga de trabajos internos.
+                    - Mejorar y escalar la productividad.
 
-                * Marketing Digital
-                Llegar a potenciales clientes.
-                Integrar con Google Ads y Facebook Ads.
+                    * Marketing Digital
+                    Llegar a potenciales clientes.
+                    Integrar con Google Ads y Facebook Ads.
 
-                * Publicidad Online
-                Optimizamos el SEO del sitio.
-                Posicionamos en las redes sociales.
-                Diseño gráfico de la marca y su impronta.
-            </p>
-        </div>
-    </section>
-    <!-- Fin de Servicios -->
+                    * Publicidad Online
+                    Optimizamos el SEO del sitio.
+                    Posicionamos en las redes sociales.
+                    Diseño gráfico de la marca y su impronta.
+                </p>
+            </div>
+        </section>
+        <!-- Fin de Servicios -->
 
-    <!-- Inicio de Proyectos -->
-    <section>
-        <div>
-            <p>
-                Nuestros Últimos Proyectos:
-                Proyecto 1.
-                Proyecto 2.
-                Proyecto 3.
-                Proyecto 4.
-                Proyecto 5.
-                Proyecto 6.
-            </p>
-        </div>
-    </section>
-    <!-- Fin de Proyectos -->
+        <!-- Inicio de Proyectos -->
+        <section class="proyectos">
+            <div>
+                <p>
+                    Nuestros Últimos Proyectos:
+                    Proyecto 1.
+                    Proyecto 2.
+                    Proyecto 3.
+                    Proyecto 4.
+                    Proyecto 5.
+                    Proyecto 6.
+                </p>
+            </div>
+        </section>
+        <!-- Fin de Proyectos -->
 
-    <!-- Inicio de Quiénes somos -->
-    <section id="secQuienesSomos">
-        <div>
-            <p>
-                Carlos Martin Bracamonte
+        <!-- Inicio de Quiénes somos -->
+        <section class="quienes" id="secQuienesSomos">
+            <div>
+                <p>
+                    Carlos Martin Bracamonte
 
-                Roberto Stick
+                    Roberto Stick
 
-                Ing. José Agustín González
-            </p>
-        </div>
-    </section>
-    <!-- Fin de Quiénes somos -->
+                    Ing. José Agustín González
+                </p>
+            </div>
+        </section>
+        <!-- Fin de Quiénes somos -->
 
-    <!-- Inicio de Contacto -->
-    <section id="secContacto">
-        <div>
-            <p>
-                Atención Personalizada
+        <!-- Inicio de Contacto -->
+        <section clase="contacto" id="secContacto">
+            <div>
+                <p>
+                    Atención Personalizada
 
-                Contános cómo te podemos ayudar y nuestro equipo te va a estar respondiendo
+                    Contános cómo te podemos ayudar y nuestro equipo te va a estar respondiendo
 
-                contacto@geniosestudio.com.ar
+                    contacto@geniosestudio.com.ar
 
-                +54 9 362 400 - 0000
+                    +54 9 362 400 - 0000
 
-                Argentina
-            </p>
-        </div>
-    </section>
-    <!-- Fin de Contacto -->
-
-    <script src="js/script.js"></script>
+                    Argentina
+                </p>
+            </div>
+        </section>
+        <!-- Fin de Contacto -->
+    </main>
+    <footer class="pie">Todos los derechos reservados &copy; Genios Estudio </footer>
 </body>
 
 </html>
