@@ -9,13 +9,18 @@ https://meyerweb.com/eric/tools/css/reset/
 
 https://fontawesome.com/icons
 
+https://blog.hubspot.es/website/fondos-para-paginas-web
 
 
 Cree una estructura básica
 ==========================
-css
-img
-js
+assets
+    css
+    img
+    js
+    ico
+
+resources
 
 Carpetas para cargar propuestas
 ===============================
