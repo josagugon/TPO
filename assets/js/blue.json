@@ -1,0 +1,26 @@
+// 20221025164709
+// https://api.bluelytics.com.ar/v2/latest
+
+{
+  "oficial": {
+    "value_avg": 158.00,
+    "value_sell": 162.00,
+    "value_buy": 154.00
+  },
+  "blue": {
+    "value_avg": 291.00,
+    "value_sell": 293.00,
+    "value_buy": 289.00
+  },
+  "oficial_euro": {
+    "value_avg": 170.00,
+    "value_sell": 174.00,
+    "value_buy": 166.00
+  },
+  "blue_euro": {
+    "value_avg": 313.00,
+    "value_sell": 315.00,
+    "value_buy": 311.00
+  },
+  "last_update": "2022-10-25T16:46:09.646346-03:00"
+}

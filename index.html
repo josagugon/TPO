@@ -11,6 +11,7 @@
     <link href="./assets/css/reset.css" rel="stylesheet">
     <link href="./assets/css/style.css" rel="stylesheet">
     <link href="./assets/css/responsivo.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 
 <body>
@@ -54,23 +55,42 @@
 
         <!-- Noticias -->
         <div class="noticias">
-            <ul>
-                <li>NOTICIAS</li>
-                <li>ENLACES</li>
-                <li>DOLAR</li>
-                <li>NOTICIAS</li>
-                <li>ENLACES</li>
-                <li>DOLAR</li>
-                <li>NOTICIAS</li>
-                <li>ENLACES</li>
-                <li>DOLAR</li>
-                <li>NOTICIAS</li>
-                <li>ENLACES</li>
-                <li>DOLAR</li>
-                <li>NOTICIAS</li>
-                <li>ENLACES</li>
-                <li>DOLAR</li>
-            </ul>
+            <div id="bitcoin">
+                <h1>Bitcoin:</h1>
+                <P class="lighten"><br>{{time}}</P>
+
+                <section v-if="errored">
+                    <p>Intente más tarde</p>
+                </section>
+
+                <section v-else>
+                    <div v-if="loading">Cargando...</div>
+
+                    <div v-else v-for="currency in info" class="currency">
+                        <br>{{ currency.code }}:
+                        <span class="lighten">
+                            <span v-html="currency.symbol"></span>{{ currency.rate_float | currencydecimal }}
+                        </span>
+                    </div>
+
+                </section>
+            </div>
+            <div id="blue">
+                <h1><br><br><br><br>Blue Venta:</h1>
+
+                <section v-if="errored">
+                    <p>Intente más tarde</p>
+                </section>
+
+                <section v-else>
+                    <div v-if="loading">Cargando...</div>
+                    <div v-else class="currency">
+                        <span class="lighten">
+                            <br>1U$D=${{ info.value_sell }}
+                        </span>
+                    </div>
+                </section>
+            </div>
         </div>
         <!-- Fin de Noticias -->
 
@@ -194,7 +214,7 @@
         <div class="quienes" id="secQuienesSomos">
             <ul>
                 <li>
-                    Comisión 22501 - Full Stck Python
+                    Comisión 22501 - Full Stack Python
                 </li>
                 <li>
                     Grupo 9 - 2022/10
@@ -237,6 +257,8 @@
             <br>Todos los derechos reservados &copy; Genios Studio - Octubre del 2022. <br>
         </div>
     </div>
+    <script src="assets/js/bitcoin.js"></script>
+    <script src="assets/js/blue.js"></script>
 </body>
 
 </html>
