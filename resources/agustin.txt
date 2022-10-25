@@ -65,3 +65,21 @@ TAREAS
 1) Crear el logo
 2) Crear el favicon.ico
 3) Crear el contenido de las secciones 
+
+
+BODY                    sitio
+    HEADER              encabezado
+        NAV             menu
+            UL          menu__lista
+                LI      menu__item
+                    A   menu__link
+    MAIN                contenido
+        SECTION         inicio
+        SECTION         servicios
+        SECTION         proyectos
+        SECTION         quines
+        SECTION         contacto
+    FOOTER              pie
+
+
+
