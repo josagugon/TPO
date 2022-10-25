@@ -27,6 +27,10 @@
     display: flex;
     background: #f1f1f1;
     padding: 1rem;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    z-index: 1;
 }
 
 .noticias {
@@ -142,6 +146,7 @@
     color: #333333;
     padding: .5rem 1rem;
     font-size: small;
+    text-decoration: none;
 }
 
 .menu__link:hover,
