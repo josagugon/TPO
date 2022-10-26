@@ -117,7 +117,7 @@
     width: auto;
     height: 100%;
     color: rgb(165, 177, 195);
-    padding: 1rem;
+    padding: 1rem 10em;
     font-size: large;
     margin: 0 auto;
     max-width: 1200px;
@@ -174,7 +174,7 @@
 
 .proyectos__video {
     padding-top: 20px;
-    width: 800px;
+    width: 600px;
     height: 400px;
 }
 
@@ -193,14 +193,19 @@
     font-size: large;
 }
 
-.quienes li {
-    margin: 3px 0;
+.quienes li{
+    margin-top: 10px;
+    transition: all 600ms ease-in-out;
+}
+
+.quienes li:hover{
+    transform:rotateX(360deg);
 }
 
 /* CONTACTO */
 .contacto {
     grid-area: contacto;
-    display: flex;
+    display: block;
     justify-content: center;
     background-color: rgba(99, 104, 150, 0.4);
     flex-wrap: wrap;
@@ -212,6 +217,14 @@
     font-size: large;
 }
 
+.contacto .contacto_datos{
+    padding-top: 3rem;
+}
+
+.contacto .contacto_h1{
+    padding-top: 1rem ;
+    padding-bottom: 3rem;
+}
 /* PIE */
 .pie {
     grid-area: footer;
