@@ -250,6 +250,13 @@
     background: lightblue;
 }
 
+.contacto__oculto{
+    text-decoration: none;
+    cursor: none;
+    font-style: normal;
+    color: black;
+}
+
 
 /* PIE */
 .pie {
