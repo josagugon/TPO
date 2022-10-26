@@ -31,6 +31,7 @@
     overflow: hidden;
     z-index: 1;
     justify-content: space-between;
+    border-radius: 30px;
 }
 
 .titulo {
@@ -110,6 +111,7 @@
 /* SERVICIOS */
 .servicios {
     grid-area: servicios;
+    background: url('../img/4882066.jpg') center / cover no-repeat;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -152,7 +154,7 @@
     display: flex;
     justify-content: center;
     text-align: center;
-    background-color: rgba(99, 104, 150, 0.4);
+    background: url('../img/18857.jpg') center / cover no-repeat;
     width: auto;
     height: 100%;
     padding: 1rem;
@@ -181,50 +183,59 @@
 /* QUIENES */
 .quienes {
     grid-area: quienes;
+    background: url('../img/vector-JUL-2021-72.jpg') center / cover no-repeat;
     display: flex;
     justify-content: center;
     background-color: rgba(99, 104, 150, 0.4);
     flex-wrap: wrap;
     width: auto;
     height: 100%;
-    color: rgb(165, 177, 195);
+    /* color: rgb(165, 177, 195); */
+    color: grey;;
     padding: 1rem;
     text-align: center;
-    font-size: large;
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.quienes li{
+.quienes li {
     margin-top: 10px;
     transition: all 600ms ease-in-out;
 }
 
-.quienes li:hover{
-    transform:rotateX(360deg);
+.quienes li:hover {
+    transform: rotateX(360deg);
 }
 
 /* CONTACTO */
 .contacto {
     grid-area: contacto;
+    background: url('../img/5559852.jpg') center / cover no-repeat;
     display: block;
     justify-content: center;
     background-color: rgba(99, 104, 150, 0.4);
     flex-wrap: wrap;
     width: auto;
     height: 100%;
-    color: rgb(165, 177, 195);
-    text-align: center;
+    /* color: rgb(165, 177, 195); */
     padding: 1rem;
+    color: black;
+    text-align: center;
     font-size: large;
+    font-weight: bolder;
 }
 
-.contacto .contacto_datos{
-    padding-top: 3rem;
+.contacto__datos li{
+    padding-top: 1rem;
 }
 
-.contacto .contacto_h1{
-    padding-top: 1rem ;
-    padding-bottom: 3rem;
+.contacto__h1 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-style: oblique;
+    text-decoration:underline;
 }
+
 /* PIE */
 .pie {
     grid-area: footer;
@@ -232,4 +243,7 @@
     text-align: center;
     color: black;
     font-style: italic;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 30px;
 }
