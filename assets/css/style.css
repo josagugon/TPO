@@ -1,9 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins");
-
-body{
-    font-family: 'Poppins';
-}
-
+/* GENERAL */
 .sitio {
     background: #170034;
     padding: 1rem;
@@ -20,9 +15,11 @@ body{
         "quienes sidebar"
         "contacto sidebar"
         "footer footer";
-    gap: 1cm;
+    font-family: 'Poppins';
+    row-gap: 2.7rem;
 }
 
+/* ENCABEZAMIENTO */
 .encabezado {
     grid-area: header;
     align-items: center;
@@ -36,68 +33,67 @@ body{
     justify-content: space-between;
 }
 
-
-.titulos {
+.titulo {
     grid-area: header;
     display: flex;
+    align-items: center;
+    color: black;
+    font-size: large;
+    font-style: italic;
+    font-weight: bolder;
 }
 
-.titulo {
+.titulo__logo {
+    height: 2rem;
+}
+
+.titulo__texto {
     margin: auto 5px;
 }
 
-h2{
-    font-size: x-large;
-    margin: 10px 0;
-}
-
-p{
-    font-size: medium;
-    margin: 3px 0;
-}
-
-.proyectos a{
-    font-size: x-large;
-    color: rgb(165, 177, 195);
+.menu__link {
+    color: #333333;
+    padding: .5rem 0.5rem;
+    font-size: small;
     text-decoration: none;
 }
-.proyectos a:hover{
-    font-size: x-large;
-    color: #0073e6;
-    text-decoration: underline;
+
+.menu__link:hover {
+    border-bottom: 2px solid #0073e6;
 }
 
+/* NOTICIAS */
 .noticias {
     grid-area: sidebar;
     background: url('../img/textura-fondo-marmol.png') center / cover no-repeat;
-    border-radius: 30px;
-    color: rgba(0, 0, 0, 0.7) ;
+    color: rgba(0, 0, 0, 0.7);
     font-family: Impact;
     font-weight: lighter;
-    grid-area: sidebar;
     padding: 1rem;
     text-align: center;
+    border-radius: 30px;
 }
 
-
-.noticias .moneda{
+.noticias__moneda {
     display: block;
     justify-items: center;
     position: sticky;
     top: 0;
-    padding-top: 100px;
+    padding-top: 50px;
     overflow: hidden;
     z-index: 1;
 }
 
-.lighten{
+.noticias__cotizacion {
     font-style: italic;
     font-weight: bolder;
 }
+
+/* INICIO */
 .inicio {
     grid-area: inicio;
     background: url('../img/SL_101619_24150_63.jpg') center / cover no-repeat;
-    
+
 }
 
 .inicio__lista {
@@ -105,12 +101,13 @@ p{
     padding: 1rem;
 }
 
-td{
+.inicio__item {
     width: 23%;
     font-family: arial;
     font-style: italic;
 }
 
+/* SERVICIOS */
 .servicios {
     grid-area: servicios;
     display: flex;
@@ -122,7 +119,6 @@ td{
     color: rgb(165, 177, 195);
     padding: 1rem;
     font-size: large;
-    width: 90%;
     margin: 0 auto;
     max-width: 1200px;
     align-items: center;
@@ -131,7 +127,7 @@ td{
     flex-wrap: wrap;
 }
 
-.list_servicios{
+.servicios__lista {
     display: center;
     padding-bottom: 3em;
     flex-basis: 280px;
@@ -140,6 +136,17 @@ td{
     align-items: center;
 }
 
+.servicios__titulo {
+    font-size: x-large;
+    margin: 10px 0;
+}
+
+.servicios p {
+    font-size: medium;
+    margin: 3px 0;
+}
+
+/* PROYECTOS */
 .proyectos {
     grid-area: proyectos;
     display: flex;
@@ -153,12 +160,25 @@ td{
     color: rgb(165, 177, 195);
 }
 
-.video {
+.proyectos a {
+    font-size: x-large;
+    color: rgb(165, 177, 195);
+    text-decoration: none;
+}
+
+.proyectos a:hover {
+    font-size: x-large;
+    color: #0073e6;
+    text-decoration: underline;
+}
+
+.proyectos__video {
     padding-top: 20px;
     width: 800px;
     height: 400px;
 }
 
+/* QUIENES */
 .quienes {
     grid-area: quienes;
     display: flex;
@@ -173,10 +193,11 @@ td{
     font-size: large;
 }
 
-.quienes li{
+.quienes li {
     margin: 3px 0;
 }
 
+/* CONTACTO */
 .contacto {
     grid-area: contacto;
     display: flex;
@@ -191,33 +212,11 @@ td{
     font-size: large;
 }
 
+/* PIE */
 .pie {
     grid-area: footer;
     background-color: #f1f1f1;
     text-align: center;
     color: black;
     font-style: italic;
-}
-
-.titulo__logo {
-    height: 2rem;
-}
-
-.titulo {
-    align-items: center;
-    color: black;
-    font-size: large;
-    font-style: italic;
-    font-weight: bolder;
-}
-
-.menu__link {
-    color: #333333;
-    padding: .5rem 1rem;
-    font-size: small;
-    text-decoration: none;
-}
-
-.menu__link:hover {
-    border-bottom: 2px solid #0073e6;
 }

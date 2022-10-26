@@ -11,7 +11,7 @@
     <link href="./assets/css/reset.css" rel="stylesheet">
     <link href="./assets/css/style.css" rel="stylesheet">
     <link href="./assets/css/responsivo.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 
@@ -19,16 +19,16 @@
     <div class="sitio">
         <!-- Inicio del encabezamiento -->
         <header class="encabezado">
-            <div class="titulos">
+            <div class="titulo">
                 <img class="titulo__logo" src="assets/img/logo.jpg">
-                <h1 class="titulo">
+                <h1 class="titulo__texto">
                     GENIOS STUDIO
                 </h1>
             </div>
             <nav class="menu">
                 <ul class="menu__lista">
                     <li class="menu__item">
-                        <a class="menu__link activo" href="#secInicio">
+                        <a class="menu__link" href="#secInicio">
                             <i class="fa fa-home" aria-hidden="true"></i>
                             Inicio
                         </a>
@@ -56,10 +56,10 @@
 
         <!-- Noticias -->
         <div class="noticias">
-            <div class="moneda">
+            <div class="noticias__moneda">
                 <div id="bitcoin">
                     <h1>Bitcoin:</h1>
-                    <P class="lighten"><br>{{time}}</P>
+                    <P class="noticias__cotizacion"><br>{{time}}</P>
                     <section v-if="errored">
                         <p>Intente más tarde</p>
                     </section>
@@ -67,21 +67,21 @@
                         <div v-if="loading">Cargando...</div>
                         <div v-else v-for="currency in info" class="currency">
                             <br>{{ currency.code }}:
-                            <span class="lighten">
+                            <span class="noticias__cotizacion">
                                 <span v-html="currency.symbol"></span>{{ currency.rate_float | currencydecimal }}
                             </span>
                         </div>
                     </section>
                 </div>
                 <div id="blue">
-                    <h1><br><br><br><br>Blue Venta:</h1>
+                    <h1><br>Blue Venta:</h1>
                     <section v-if="errored">
                         <p>Intente más tarde</p>
                     </section>
                     <section v-else>
                         <div v-if="loading">Cargando...</div>
                         <div v-else class="currency">
-                            <span class="lighten">
+                            <span class="noticias__cotizacion">
                                 <br>1U$D=${{ info.value_sell }}
                             </span>
                         </div>
@@ -91,78 +91,111 @@
         </div>
         <!-- Fin de Noticias -->
 
-       <!-- Inicio del Inicio -->
-       <div class="inicio" id="secInicio">
-        <table>
-            <tbody class="inicio__lista">
-                <tr>
-                    <td class="inicio__item">Soluciones para Empresas</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td class="inicio__item">Desarrollo WEB</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td class="inicio__item">IT Outsorcing</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td class="inicio__item">Marketing Digital</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td class="inicio__item">Publicidad Online</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    <!-- Fin del Inicio -->
+        <!-- Inicio del Inicio -->
+        <div class="inicio" id="secInicio">
+            <table>
+                <tbody class="inicio__lista">
+                    <tr>
+                        <td class="inicio__item">Soluciones para Empresas</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="inicio__item">Desarrollo WEB</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td class="inicio__item">IT Outsorcing</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="inicio__item">Marketing Digital</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="inicio__item">Publicidad Online</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- Fin del Inicio -->
 
         <!-- Inicio de Servicios -->
         <div class="servicios" id="secServicios">
-            <ul class="list_servicios">
-                <li><h2>Desarrollo WEB</h2></li>
-                <li><p>Sitios web personalizados.</p></li>
-                <li><p>Optimizamos la experiencia del usuario y su navegabilidad.</p></li>
-                <li><p>Diseño integral del sitio según el objetivo de la empresa.</p></li>
-                <li><p>Tienda Online.</p></li>
+            <ul class="servicios__lista">
+                <li>
+                    <h2 class="servicios__titulo">Desarrollo WEB</h2>
+                </li>
+                <li>
+                    <p>Sitios web personalizados.</p>
+                </li>
+                <li>
+                    <p>Optimizamos la experiencia del usuario y su navegabilidad.</p>
+                </li>
+                <li>
+                    <p>Diseño integral del sitio según el objetivo de la empresa.</p>
+                </li>
+                <li>
+                    <p>Tienda Online.</p>
+                </li>
             </ul>
-            <ul class="list_servicios">
-                <li><h2>IT Outsorcing</h2></li>
-                <li><p>Tercerizamos los servicios de la empresa para:</p> </li>
-                <li><p>Reducir la carga de trabajos internos.</p></li>
-                <li><p>Mejorar y escalar la productividad.</p></li>
+            <ul class="servicios__lista">
+                <li>
+                    <h2 class="servicios__titulo">IT Outsorcing</h2>
+                </li>
+                <li>
+                    <p>Tercerizamos los servicios de la empresa para:</p>
+                </li>
+                <li>
+                    <p>Reducir la carga de trabajos internos.</p>
+                </li>
+                <li>
+                    <p>Mejorar y escalar la productividad.</p>
+                </li>
             </ul>
-            <ul class="list_servicios">
-                <li><h2>Marketing Digital</h2></li>
-                <li><p>Llegar a potenciales clientes.</p> </li>
-                <li><p>Integrar con Google Ads y Facebook Ads.</p></li>
+            <ul class="servicios__lista">
+                <li>
+                    <h2 class="servicios__titulo">Marketing Digital</h2>
+                </li>
+                <li>
+                    <p>Llegar a potenciales clientes.</p>
+                </li>
+                <li>
+                    <p>Integrar con Google Ads y Facebook Ads.</p>
+                </li>
             </ul>
-            <ul class="list_servicios">
-                <li><h2>Publicidad Online</h2></li>
-                <li><p>Optimizamos el SEO del sitio.</p></li>
-                <li><p>Posicionamos en las redes sociales.</p></li>
-                <li><p>Diseño gráfico de la marca y su impronta.</p> </li>
+            <ul class="servicios__lista">
+                <li>
+                    <h2 class="servicios__titulo">Publicidad Online</h2>
+                </li>
+                <li>
+                    <p>Optimizamos el SEO del sitio.</p>
+                </li>
+                <li>
+                    <p>Posicionamos en las redes sociales.</p>
+                </li>
+                <li>
+                    <p>Diseño gráfico de la marca y su impronta.</p>
+                </li>
             </ul>
         </div>
         <!-- Fin de Servicios -->
+
         <!-- Inicio de Proyectos -->
         <div class="proyectos" id="secProyectos">
             <ul>
@@ -176,7 +209,7 @@
                             rel="noopener noreferrer"><strong>Enlace</strong></a>
                     </div>
                     <div>
-                        <iframe class="video"  src="resources/uep.mp4" title="Presentación del sitio"
+                        <iframe class="proyectos__video" src="resources/uep.mp4" title="Presentación del sitio"
                             frameborder="0">
                         </iframe>
                         <!-- allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" -->
