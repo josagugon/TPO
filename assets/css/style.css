@@ -104,7 +104,7 @@
 }
 
 .inicio__item {
-    width: 23%;
+    width: 20%;
     font-family: arial;
     font-style: italic;
 }
@@ -156,17 +156,16 @@
     height: 100%;
     padding: 1rem;
     font-size: x-large;
+    line-height: normal;
     color: rgb(165, 177, 195);
 }
 
 .proyectos a {
-    font-size: x-large;
     color: rgb(165, 177, 195);
     text-decoration: none;
 }
 
 .proyectos a:hover {
-    font-size: x-large;
     color: #0073e6;
     text-decoration: underline;
 }
@@ -242,7 +241,8 @@
 
 .contacto__datos li{
     padding-top: 1rem;
-    background: lightblue;
+    padding-bottom: 1rem;
+    background: rgba(173,216,230,0.3);
 }
 
 .contacto__oculto{
