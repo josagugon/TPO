@@ -4,17 +4,12 @@
 
 ### Comisión 22.501 - Grupo 9
 
-#### Profesor Ramiro Escalante Leiva
+#### Profesor Lic. Ramiro Escalante Leiva
 
 ##### Integrantes:
 
-* Carlos Bracamonte
-* Roberto Stick
-* José Agustín González
-
-##### Profesor:
-
-###### * *RAMIRO ESCALANTE LEIVA*
+* Sr. Roberto Stick
+* Ing. José Agustín González
 
 ##### ¿Cuándo se entrega?
 
