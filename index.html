@@ -11,6 +11,7 @@
     <link href="./assets/css/reset.css" rel="stylesheet">
     <link href="./assets/css/style.css" rel="stylesheet">
     <link href="./assets/css/responsivo.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 
@@ -55,146 +56,121 @@
 
         <!-- Noticias -->
         <div class="noticias">
-            <div id="bitcoin">
-                <h1>Bitcoin:</h1>
-                <P class="lighten"><br>{{time}}</P>
-
-                <section v-if="errored">
-                    <p>Intente más tarde</p>
-                </section>
-
-                <section v-else>
-                    <div v-if="loading">Cargando...</div>
-
-                    <div v-else v-for="currency in info" class="currency">
-                        <br>{{ currency.code }}:
-                        <span class="lighten">
-                            <span v-html="currency.symbol"></span>{{ currency.rate_float | currencydecimal }}
-                        </span>
-                    </div>
-
-                </section>
-            </div>
-            <div id="blue">
-                <h1><br><br><br><br>Blue Venta:</h1>
-
-                <section v-if="errored">
-                    <p>Intente más tarde</p>
-                </section>
-
-                <section v-else>
-                    <div v-if="loading">Cargando...</div>
-                    <div v-else class="currency">
-                        <span class="lighten">
-                            <br>1U$D=${{ info.value_sell }}
-                        </span>
-                    </div>
-                </section>
+            <div class="moneda">
+                <div id="bitcoin">
+                    <h1>Bitcoin:</h1>
+                    <P class="lighten"><br>{{time}}</P>
+                    <section v-if="errored">
+                        <p>Intente más tarde</p>
+                    </section>
+                    <section v-else>
+                        <div v-if="loading">Cargando...</div>
+                        <div v-else v-for="currency in info" class="currency">
+                            <br>{{ currency.code }}:
+                            <span class="lighten">
+                                <span v-html="currency.symbol"></span>{{ currency.rate_float | currencydecimal }}
+                            </span>
+                        </div>
+                    </section>
+                </div>
+                <div id="blue">
+                    <h1><br><br><br><br>Blue Venta:</h1>
+                    <section v-if="errored">
+                        <p>Intente más tarde</p>
+                    </section>
+                    <section v-else>
+                        <div v-if="loading">Cargando...</div>
+                        <div v-else class="currency">
+                            <span class="lighten">
+                                <br>1U$D=${{ info.value_sell }}
+                            </span>
+                        </div>
+                    </section>
+                </div>
             </div>
         </div>
         <!-- Fin de Noticias -->
 
-        <!-- Inicio del Inicio -->
-        <div class="inicio" id="secInicio">
-            <ul class="inicio__lista">
-                <li class="inicio__item">
-                    Soluciones para Empresas
-                </li>
-                <li class="inicio__item">
-                    Desarrollo WEB
-                </li>
-                <li class="inicio__item">
-                    IT Outsorcing
-                </li>
-                <li class="inicio__item">
-                    Marketing Digital
-                </li>
-                <li class="inicio__item">
-                    Publicidad Online
-                </li>
-            </ul>
-        </div>
-        <!-- Fin del Inicio -->
+       <!-- Inicio del Inicio -->
+       <div class="inicio" id="secInicio">
+        <table>
+            <tbody class="inicio__lista">
+                <tr>
+                    <td class="inicio__item">Soluciones para Empresas</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="inicio__item">Desarrollo WEB</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td class="inicio__item">IT Outsorcing</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="inicio__item">Marketing Digital</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="inicio__item">Publicidad Online</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- Fin del Inicio -->
 
         <!-- Inicio de Servicios -->
         <div class="servicios" id="secServicios">
-            <div>
-                <ul>
-                    <li>
-                        * Desarrollo WEB
-                    </li>
-                    <ul>
-                        <li>
-                            - Sitios web personalizados.
-                        </li>
-                        <li>
-                            - Optimizamos la experiencia del usuario y su navegabilidad.
-                        </li>
-                        <li>
-                            - Diseño integral del sitio según el objetivo de la empresa.
-                        </li>
-                        <li>
-                            - Tienda Online.
-                        </li>
-                    </ul>
-                </ul>
-                <ul>
-                    <li>
-                        * IT Outsorcing
-                    </li>
-                    <ul>
-                        <li>
-                            - Tercerizamos los servicios de la empresa para:
-                        </li>
-                        <li>
-                            - Reducir la carga de trabajos internos.
-                        </li>
-                        <li>
-                            - Mejorar y escalar la productividad.
-                        </li>
-                    </ul>
-                </ul>
-                <ul>
-                    <li>
-                        * Marketing Digital
-                    </li>
-                    <ul>
-                        <li>
-                            - Llegar a potenciales clientes.
-                        </li>
-                        <li>
-                            - Integrar con Google Ads y Facebook Ads.
-                        </li>
-                    </ul>
-                </ul>
-                <ul>
-                    <li>
-                        * Publicidad Online
-                    </li>
-                    <ul>
-                        <li>
-                            - Optimizamos el SEO del sitio.
-                        </li>
-                        <li>
-                            - Posicionamos en las redes sociales.
-                        </li>
-                        <li>
-                            - Diseño gráfico de la marca y su impronta.
-                        </li>
-                    </ul>
-                </ul>
-            </div>
+            <ul class="list_servicios">
+                <li><h2>Desarrollo WEB</h2></li>
+                <li><p>Sitios web personalizados.</p></li>
+                <li><p>Optimizamos la experiencia del usuario y su navegabilidad.</p></li>
+                <li><p>Diseño integral del sitio según el objetivo de la empresa.</p></li>
+                <li><p>Tienda Online.</p></li>
+            </ul>
+            <ul class="list_servicios">
+                <li><h2>IT Outsorcing</h2></li>
+                <li><p>Tercerizamos los servicios de la empresa para:</p> </li>
+                <li><p>Reducir la carga de trabajos internos.</p></li>
+                <li><p>Mejorar y escalar la productividad.</p></li>
+            </ul>
+            <ul class="list_servicios">
+                <li><h2>Marketing Digital</h2></li>
+                <li><p>Llegar a potenciales clientes.</p> </li>
+                <li><p>Integrar con Google Ads y Facebook Ads.</p></li>
+            </ul>
+            <ul class="list_servicios">
+                <li><h2>Publicidad Online</h2></li>
+                <li><p>Optimizamos el SEO del sitio.</p></li>
+                <li><p>Posicionamos en las redes sociales.</p></li>
+                <li><p>Diseño gráfico de la marca y su impronta.</p> </li>
+            </ul>
         </div>
         <!-- Fin de Servicios -->
-
         <!-- Inicio de Proyectos -->
         <div class="proyectos" id="secProyectos">
             <ul>
                 <li>
-                    Nuestros Últimos Proyectos:
+                    <h2>Últimos Proyectos:</h2>
                 </li>
                 <li>
-                    Sitio de la UEP N° 149 "Fundación UOCRA"
+                    <p>Sitio de la UEP N° 149 "Fundación UOCRA"</p>
                     <div>
                         <a href="https://murmuring-spire-31279.herokuapp.com/" target="_blank"
                             rel="noopener noreferrer"><strong>Enlace</strong></a>
@@ -213,22 +189,22 @@
         <!-- Inicio de Quiénes somos -->
         <div class="quienes" id="secQuienesSomos">
             <ul>
-                <li>
+                <li class="quienes__titulo">
                     Comisión 22501 - Full Stack Python
                 </li>
-                <li>
+                <li class="quienes__titulo">
                     Grupo 9 - 2022/10
                 </li>
-                <li>
-                    Sr. Carlos Martin Bracamonte
+                <li class="quienes__integrante">
+                    * Sr. Carlos Martin Bracamonte
                 </li>
-                <li>
-                    Sr. Roberto Stick
+                <li class="quienes__integrante">
+                    * Sr. Roberto Stick
                 </li>
-                <li>
-                    Ing. José Agustín González
+                <li class="quienes__integrante">
+                    * Ing. José Agustín González
                 </li>
-                <li>
+                <li class="quienes__profesor">
                     Profesor Lic. Ramiro Escalante Leiva
                 </li>
             </ul>
@@ -236,20 +212,18 @@
         <!-- Fin de Quiénes somos -->
 
         <!-- Inicio de Contacto -->
+        <!-- https://docs.google.com/spreadsheets/d/1WOSjofpkENShUxnCW2GIp0AFpIK4XkRVpZBcwlMilts/edit?usp=sharing -->
         <div class="contacto" id="secContacto">
-            <div>
-                <p>
-                    Atención Personalizada<br>
+            <h1>Atención Personalizada</h1>
+            <iframe class="formulario"
+                src="https://docs.google.com/forms/d/e/1FAIpQLSeQ6JYYWKqxxPdvZkAPiYd9KdsJn1yxG6-4EA8Qs-VO8Vt1xQ/viewform?embedded=true"
+                width="640" height="709" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
 
-                    Contános cómo te podemos ayudar y nuestro equipo te va a estar respondiendo<br>
-
-                    contacto@geniosstudio.com.ar<br>
-
-                    +54 9 362 400 - 0000<br>
-
-                    Argentina
-                </p>
-            </div>
+            <ul class="datos">
+                <li>geniosstudio4@gmail.com</li>
+                <li>+54 9 362 400 - 0000</li>
+                <li>Argentina</li>
+            </ul>
         </div>
         <!-- Fin de Contacto -->
 

@@ -1,7 +1,12 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    /*
-    */
+    .proyectos {
+        display: none;
+    }
+
+    .noticias {
+        display: none;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -10,12 +15,35 @@
     */
 }
 
+@media only screen and (max-width: 768px) {
+    .sitio {
+        grid-template-columns: 100%;
+        grid-template-rows: 50px auto auto auto auto auto auto;
+        grid-template-areas:
+            "header"
+            "inicio"
+            "servicios"
+            "proyectos"
+            "quienes"
+            "contacto"
+            "footer";
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .noticias {
+        display: none;
+    }
+}
+
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     /*
     */
 }
-
+    
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     /*

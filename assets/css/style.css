@@ -1,9 +1,14 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+body{
+    font-family: 'Poppins';
+}
+
 .sitio {
     background: #170034;
     padding: 1rem;
     color: white;
     display: grid;
-    font-family: Arial, Helvetica, sans-serif;
     grid-gap: 10px;
     grid-template-columns: 80% 15%;
     grid-template-rows: 50px auto auto auto auto auto auto;
@@ -15,6 +20,7 @@
         "quienes sidebar"
         "contacto sidebar"
         "footer footer";
+    gap: 1cm;
 }
 
 .encabezado {
@@ -30,6 +36,7 @@
     justify-content: space-between;
 }
 
+
 .titulos {
     grid-area: header;
     display: flex;
@@ -39,11 +46,48 @@
     margin: auto 5px;
 }
 
+h2{
+    font-size: x-large;
+    margin: 10px 0;
+}
+
+p{
+    font-size: medium;
+    margin: 3px 0;
+}
+
+.proyectos a{
+    font-size: x-large;
+    color: rgb(165, 177, 195);
+    text-decoration: none;
+}
+.proyectos a:hover{
+    font-size: x-large;
+    color: #0073e6;
+    text-decoration: underline;
+}
+
 .noticias {
     grid-area: sidebar;
-    background: #170034;
+    background: url('../img/textura-fondo-marmol.png') center / cover no-repeat;
+    border-radius: 30px;
+    color: rgba(0, 0, 0, 0.7) ;
+    font-family: Impact;
+    font-weight: lighter;
+    grid-area: sidebar;
     padding: 1rem;
     text-align: center;
+}
+
+
+.noticias .moneda{
+    display: block;
+    justify-items: center;
+    position: sticky;
+    top: 0;
+    padding-top: 100px;
+    overflow: hidden;
+    z-index: 1;
 }
 
 .lighten{
@@ -53,65 +97,98 @@
 .inicio {
     grid-area: inicio;
     background: url('../img/SL_101619_24150_63.jpg') center / cover no-repeat;
+    
 }
 
 .inicio__lista {
-    color: white;
+    color: rgb(165, 177, 195);
     padding: 1rem;
 }
 
+td{
+    width: 23%;
+    font-family: arial;
+    font-style: italic;
+}
 
 .servicios {
     grid-area: servicios;
-    background: #170034;
-    height: 100%;
+    display: flex;
     justify-content: center;
-    color: white;
-    padding: 1rem;
+    text-align: center;
+    background-color: rgba(99, 104, 150, 0.4);
     width: auto;
-    font-size: x-large;
+    height: 100%;
+    color: rgb(165, 177, 195);
+    padding: 1rem;
+    font-size: large;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+.list_servicios{
+    display: center;
+    padding-bottom: 3em;
+    flex-basis: 280px;
+    max-width: 450px;
+    flex-grow: 1;
+    align-items: center;
 }
 
 .proyectos {
     grid-area: proyectos;
-    background: #170034;
-    height: 100%;
+    display: flex;
     justify-content: center;
-    color: white;
-    padding: 1rem;
+    text-align: center;
+    background-color: rgba(99, 104, 150, 0.4);
     width: auto;
+    height: 100%;
+    padding: 1rem;
     font-size: x-large;
+    color: rgb(165, 177, 195);
 }
 
 .video {
-    width: 100%;
+    padding-top: 20px;
+    width: 800px;
     height: 400px;
 }
 
 .quienes {
     grid-area: quienes;
-    background: #170034;
     display: flex;
-    flex-wrap: wrap;
-    height: 100%;
     justify-content: center;
-    color: white;
-    padding: 1rem;
+    background-color: rgba(99, 104, 150, 0.4);
+    flex-wrap: wrap;
     width: auto;
-    font-size: x-large;
+    height: 100%;
+    color: rgb(165, 177, 195);
+    padding: 1rem;
+    text-align: center;
+    font-size: large;
+}
+
+.quienes li{
+    margin: 3px 0;
 }
 
 .contacto {
     grid-area: contacto;
-    background: #170034;
     display: flex;
-    flex-wrap: wrap;
-    height: 100%;
     justify-content: center;
-    color: white;
-    padding: 1rem;
+    background-color: rgba(99, 104, 150, 0.4);
+    flex-wrap: wrap;
     width: auto;
-    font-size: x-large;
+    height: 100%;
+    color: rgb(165, 177, 195);
+    text-align: center;
+    padding: 1rem;
+    font-size: large;
 }
 
 .pie {
