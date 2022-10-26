@@ -7,6 +7,10 @@
     .noticias {
         display: none;
     }
+    .inicio {
+        font-size: x-small;
+    }
+    
     /* .servicios{
         width: 85%;
     } */
@@ -31,7 +35,6 @@
             "quienes"
             "contacto"
             "footer";
-        font-size: small;
     }
 
     .menu {

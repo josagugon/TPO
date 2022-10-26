@@ -134,7 +134,7 @@
     display: center;
     padding-bottom: 3em;
     flex-basis: 280px;
-    /* max-width: 450px; */
+    max-width: 450px;
     flex-grow: 1;
     align-items: center;
 }
@@ -184,7 +184,7 @@
 /* QUIENES */
 .quienes {
     grid-area: quienes;
-    background: url('../img/vector-JUL-2021-72.jpg') center / cover no-repeat;
+    background: url('../img/vector-JUL-2021-72-modified.jpg') center / cover no-repeat;
     display: flex;
     justify-content: center;
     background-color: rgba(99, 104, 150, 0.4);
@@ -192,13 +192,21 @@
     width: auto;
     height: 100%;
     /* color: rgb(165, 177, 195); */
-    color: grey;;
+    color: black;
     padding: 1rem;
     text-align: center;
     font-size: x-large;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.quienes__titulo{
+    text-decoration: underline;
+}
+
+.quienes__integrante{
+    font-style: italic;
+    font-weight: bolder;
+}
 .quienes li {
     margin-top: 10px;
     transition: all 600ms ease-in-out;
@@ -211,7 +219,7 @@
 /* CONTACTO */
 .contacto {
     grid-area: contacto;
-    background: url('../img/5559852.jpg') center / cover no-repeat;
+    background: url('../img/5559852-modified.jpg') center / cover no-repeat;
     display: block;
     justify-content: center;
     background-color: rgba(99, 104, 150, 0.4);
@@ -239,6 +247,7 @@
 
 .contacto__datos li{
     padding-top: 1rem;
+    background: lightblue;
 }
 
 
