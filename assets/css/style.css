@@ -68,6 +68,7 @@
 .noticias {
     grid-area: sidebar;
     background: url('../img/textura-fondo-marmol.png') center / cover no-repeat;
+    height: 100%;
     color: rgba(0, 0, 0, 0.7);
     font-family: Impact;
     font-weight: lighter;
@@ -95,7 +96,6 @@
 .inicio {
     grid-area: inicio;
     background: url('../img/SL_101619_24150_63.jpg') center / cover no-repeat;
-
 }
 
 .inicio__lista {
@@ -116,17 +116,13 @@
     display: flex;
     justify-content: center;
     text-align: center;
-    /* background-color: rgba(99, 104, 150, 0.4); */
     width: auto;
     height: 100%;
     color: rgb(165, 177, 195);
-    /* padding: 1rem 10em; */
     font-size: large;
     margin: 0 auto;
-    /* max-width: 1200px; */
     align-items: center;
     justify-content: space-evenly;
-    /* gap: 1em; */
     flex-wrap: wrap;
 }
 
@@ -184,14 +180,14 @@
 /* QUIENES */
 .quienes {
     grid-area: quienes;
-    background: url('../img/vector-JUL-2021-72-modified.jpg') center / cover no-repeat;
+    /* background: url('../img/vector-JUL-2021-72-modified.jpg') center / cover no-repeat; */
+    background: url('../img/6249980.jpg') center / cover no-repeat;
     display: flex;
     justify-content: center;
     background-color: rgba(99, 104, 150, 0.4);
     flex-wrap: wrap;
     width: auto;
     height: 100%;
-    /* color: rgb(165, 177, 195); */
     color: black;
     padding: 1rem;
     text-align: center;
@@ -226,7 +222,6 @@
     flex-wrap: wrap;
     width: auto;
     height: 100%;
-    /* color: rgb(165, 177, 195); */
     padding: 1rem;
     color: black;
     text-align: center;
@@ -256,7 +251,6 @@
     font-style: normal;
     color: black;
 }
-
 
 /* PIE */
 .pie {
