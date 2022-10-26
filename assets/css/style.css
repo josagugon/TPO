@@ -23,6 +23,7 @@
 .encabezado {
     grid-area: header;
     align-items: center;
+
     display: flex;
     background: #f1f1f1;
     padding: 1rem;
@@ -115,17 +116,17 @@
     display: flex;
     justify-content: center;
     text-align: center;
-    background-color: rgba(99, 104, 150, 0.4);
+    /* background-color: rgba(99, 104, 150, 0.4); */
     width: auto;
     height: 100%;
     color: rgb(165, 177, 195);
-    padding: 1rem 10em;
+    /* padding: 1rem 10em; */
     font-size: large;
     margin: 0 auto;
-    max-width: 1200px;
+    /* max-width: 1200px; */
     align-items: center;
     justify-content: space-evenly;
-    gap: 1em;
+    /* gap: 1em; */
     flex-wrap: wrap;
 }
 
@@ -133,7 +134,7 @@
     display: center;
     padding-bottom: 3em;
     flex-basis: 280px;
-    max-width: 450px;
+    /* max-width: 450px; */
     flex-grow: 1;
     align-items: center;
 }
@@ -225,16 +226,21 @@
     font-weight: bolder;
 }
 
-.contacto__datos li{
-    padding-top: 1rem;
-}
-
-.contacto__h1 {
+.contacto__titulo {
     padding-top: 1rem;
     padding-bottom: 1rem;
     font-style: oblique;
     text-decoration:underline;
 }
+
+.contacto__formulario {
+    width: 90%;
+}
+
+.contacto__datos li{
+    padding-top: 1rem;
+}
+
 
 /* PIE */
 .pie {
